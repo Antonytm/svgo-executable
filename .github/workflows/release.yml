@@ -1,0 +1,29 @@
+name: Release
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.1
+        
+      - name: npm install
+        run: npm install
+
+      - name: build executables
+        run: npx pkg node_modules/svgo
+
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "svgo-win.exe,svgo-linux,svgo-macos"
+          bodyFile: "readme.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
+        
+        
