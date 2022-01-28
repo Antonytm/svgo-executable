@@ -24,7 +24,9 @@
     "svgo-linux",
     "svgo-macos",
     "svgo-executable",
-    "svgo-win.exe"
+    "svgo-win.exe",
+    "svgop.exe alternative",
+    "svgop"
   ],
   "author": "Anton Tishchenko",
   "license": "MIT",
