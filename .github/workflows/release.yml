@@ -23,7 +23,7 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "svgo-win.exe,svgo-linux,svgo-macos"
-          bodyFile: "readme.md"
+          bodyFile: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
         
         
