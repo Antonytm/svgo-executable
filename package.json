@@ -1,0 +1,39 @@
+{
+  "name": "svgo-executable",
+  "version": "2.8.0",
+  "description": "Wrapper under SVGO to run it without installed node.exe on computer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonytm/svgo-executable.git"
+  },
+  "keywords": [
+    "SVGO",
+    "executable",
+    "SVG",
+    "node.exe",
+    "package",
+    "pkg",
+    "windows",
+    "linux",
+    "macos",
+    "svgo-win",
+    "svgo-linux",
+    "svgo-macos",
+    "svgo-executable",
+    "svgo-win.exe"
+  ],
+  "author": "Anton Tishchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antonytm/svgo-executable/issues"
+  },
+  "homepage": "https://github.com/Antonytm/svgo-executable#readme",
+  "dependencies": {
+    "pkg": "5.5.2",
+    "svgo": "2.8.0"
+  }
+}
