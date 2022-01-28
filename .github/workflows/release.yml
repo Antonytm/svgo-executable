@@ -20,9 +20,12 @@ jobs:
       - name: build executables
         run: npx pkg node_modules/svgo
 
+      - name: Zip svgo-win.exe
+        run: zip svgo-win.exe.zip svgo-win.exe -r
+
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "svgo-win.exe,svgo-linux,svgo-macos"
+          artifacts: "svgo-win.exe.zip,svgo-win.exe,svgo-linux,svgo-macos"
           bodyFile: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
         
